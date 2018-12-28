@@ -1,0 +1,14 @@
+.button {
+  box-sizing: border-box;
+
+  font-weight: bold;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+
+  border: 1px solid #e5ddd5;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
