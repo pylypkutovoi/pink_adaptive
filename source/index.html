@@ -117,21 +117,21 @@
   <main class="page-main page-main--index">
     <section class="features">
       <h2 class="visually-hidden">Преимущества приложения</h2>
-      <div class="features__title-wrap">
+      <div class="features__title-wrapper">
         <p class="features__title">Устали от серости мегаполиса?</p>
         <p class="features__title">Нам есть, что вам<br>  предложить!</p>
       </div>
       <div class="features__list-wrapper">
         <ul class="features__list">
-          <li class="features__item">
+          <li class="features__item features__item--mood">
             <h3 class="features__item-title">Поднимает настроение</h3>
             <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--world">
             <h3 class="features__item-title">Меняет мир вокруг</h3>
             <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="features__item">
+          <li class="features__item features__item--friends">
             <h3 class="features__item-title">Заводит новых друзей</h3>
             <p class="features__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
@@ -150,21 +150,24 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="visually-hidden">Отзывы пользователей:</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
+        <input class="slider__input" type="radio" name="reviews" id="slider-reviews-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="slider-reviews-2">
+        <input class="slider__input" type="radio" name="reviews" id="slider-reviews-3">
+        <ul class="reviews__list slider">
+          <li class="reviews__item slider__item">
             <p class="reviews__name">Николай Петров</p>
             <p class="reviews__info">25 лет, водитель трамвая</p>
             <p class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </li>
-          <li class="reviews__item">
-            <p class="reviews__name">Николай Петров</p>
-            <p class="reviews__info">25 лет, водитель трамвая</p>
-            <p class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          <li class="reviews__item slider__item">
+            <p class="reviews__name">Олег Петров</p>
+            <p class="reviews__info">24 лет, водитель трамвая</p>
+            <p class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные белые вещи! А еще я познакомился со своей будущим другом в комментариях к выложенной фотографии!</p>
           </li>
-          <li class="reviews__item">
-            <p class="reviews__name">Николай Петров</p>
-            <p class="reviews__info">25 лет, водитель трамвая</p>
-            <p class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          <li class="reviews__item slider__item">
+            <p class="reviews__name">Сергей Петров</p>
+            <p class="reviews__info">26 лет, водитель трамвая</p>
+            <p class="reviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные голубые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </li>
         </ul>
         <div class="slider__toggles  slider__toggles--reviews">
@@ -172,15 +175,15 @@
           <label class="slider__toggle" for="slider-reviews-2"></label>
           <label class="slider__toggle" for="slider-reviews-3"></label>
         </div>
-        <button class="slider__button slider__toggle--left">
+        <button class="reviews__toggles reviews__toggles--left slider__button slider__button--prev">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="slider__button slider__button--right">
+        <button class="reviews__toggles reviews__toggles--right slider__button slider__button--next">
           <span class="visually-hidden">Вперед</span>
         </button>
       </div>
     </section>
-    <section class="price visually-hidden">
+    <section>
       <div class="price__wrapper">
         <h2 class="visually-hidden">Стоимость услуг</h2>
         <div class="price__table-wrapper">

@@ -1,0 +1,143 @@
+.reviews__wrapper {
+  padding-top: 42px;
+  padding-bottom: 42px;
+
+}
+
+.reviews__list {
+  position: relative;
+
+  @include list-reset;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__name {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__info {
+  display: none;
+}
+
+.reviews__comment {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: 93.93%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .reviews__list {
+    margin-bottom: 34px;
+    padding: 0;
+  }
+
+  .reviews__name {
+    order: 2;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reviews__author-info {
+    display: block;
+    order: 3;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .reviews__info {
+    display: block;
+    order: 3;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .reviews__comment {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    // display: flex;
+    position: relative;
+    width: 78.33%;
+    position: relative;
+
+    padding: 185px 0 5px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+  }
+
+  .reviews__item {
+    padding: 0 130px;
+  }
+
+  .reviews__name {
+    font-size: 24px;
+  }
+
+  .reviews__info {
+    font-size: 18px;
+  }
+
+  .reviews__comment {
+    margin-bottom: 35px;
+  }
+
+  // .reviews__toggles {
+  //   margin-top: 10px;
+  // }
+
+  // .reviews__toggles--left {
+  //   order: -1;
+  // }
+
+  // .reviews__toggles {
+  //   padding: 0;
+  // }
+
+  .reviews__toggles {
+    position: absolute;
+    top: 58%;
+
+    transform: translateY(-50%);
+    &--left {
+      left: -10px;
+    }
+    &--right {
+      right: -10px;
+    }
+  }
+}
