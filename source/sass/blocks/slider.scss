@@ -37,17 +37,48 @@
   display: flex;
 }
 
+#slider-price-1:checked ~ .slider__toggles label[for="slider-price-1"],
+#slider-price-2:checked ~ .slider__toggles label[for="slider-price-2"],
+#slider-price-3:checked ~ .slider__toggles label[for="slider-price-3"] {
+  background-color: transparent;
+  border: 3px solid #283645;
+}
 
-.slider__prev,
-.slider__next {
+#slider-price-1:checked ~ .price__table-wrapper  {
+  transform: translateX(0);
+}
+
+#slider-price-2:checked ~ .price__table-wrapper  {
+  transform: translateX(-33.3%);
+}
+
+#slider-price-3:checked ~ .price__table-wrapper  {
+  transform: translateX(-66.6%);
+}
+
+.slider__button--next,
+.slider__button--prev {
   display: none;
 }
 
+
+@media (min-width: $tablet-width) {
+  .slider__toggles--price {
+    display: none;
+  }
+
+  #slider-price-1:checked ~ .price__table-wrapper,
+  #slider-price-2:checked ~ .price__table-wrapper,
+  #slider-price-3:checked ~ .price__table-wrapper {
+    transform: none;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .slider__toggles {
     display: none;
   }
+
 
   .slider__button {
     display: block;

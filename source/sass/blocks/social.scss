@@ -1,0 +1,28 @@
+.social__link {
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+
+  font-size: 0;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+  &:hover,
+  &:focus {
+    border-color: $dark;
+  }
+ &:active {
+    border-color: #e9ebec;
+  }
+}

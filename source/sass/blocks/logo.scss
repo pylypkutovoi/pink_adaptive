@@ -1,4 +1,4 @@
-.main-nav__logo {
+.logo {
   position: relative;
   z-index: 20;
 
@@ -7,6 +7,10 @@
   &:hover .logo__image,
   &:focus .logo__image {
     fill: $pink;
+  }
+  &--footer {
+    width: 148px;
+    height: 40px;
   }
 }
 
@@ -18,15 +22,28 @@
   }
 }
 
+.logo--footer .logo__image {
+  fill: $dark;
+  &--desktop {
+    display: none;
+  }
+}
+
 .logo--header:active .logo__image {
   opacity: 0.3;
 
   fill: $white;
 }
 
+.logo--footer:active .logo__image {
+  opacity: 0.3;
+
+  fill: $dark;
+}
+
 @media (min-width: $tablet-width) {
 
-  .main-nav__logo {
+  .logo {
     width: 147px;
     height: 40px;
   }
@@ -55,6 +72,15 @@
     &--mobile,
     &--tablet {
       display: none;
+    }
+  }
+
+  .logo--footer .logo__image {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: block;
     }
   }
 

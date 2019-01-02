@@ -1,15 +1,16 @@
 .main-nav__wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 
-@media (max-width: $mobile-only) {
+@media (min-width: $mobile-width) and (max-width: $desktop-width) {
   .main-nav {
     position: relative;
     width: auto;
+    margin-bottom: -66px;
   }
 
   .main-nav__menu {
@@ -91,7 +92,6 @@
 
   .main-nav__link {
     display: block;
-
     padding: 15px 20px;
 
     font-size: 18px;
@@ -160,6 +160,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .main-nav {
+
+    margin-bottom: -110px;
+  }
   .main-nav__menu {
     padding-top: 27px;
     padding-bottom: 43px;
@@ -175,6 +179,7 @@
   .main-nav {
     width: 78.33%;
     margin: 0 auto;
+    margin-bottom: -110px;
     display: flex;
     justify-content: space-between;
   }
