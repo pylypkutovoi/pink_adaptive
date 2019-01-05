@@ -1,0 +1,62 @@
+.form-checkbox__input {
+  display: none;
+}
+
+.form-checkbox__label {
+  position: relative;
+  padding-left: 25%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  &:hover::before {
+    border-color: $dark;
+  }
+  &:active::before {
+    border-color: $pink;
+  }
+  @media (min-width: 660px) {
+    padding-left: 13%;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 22%;
+  }
+
+}
+
+
+
+.form-checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.form-checkbox__label::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 6px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+}
+
+#achievements-1:checked + .form-checkbox__label::after,
+#achievements-2:checked + .form-checkbox__label::after,
+#achievements-3:checked + .form-checkbox__label::after,
+#achievements-4:checked + .form-checkbox__label::after,
+#achievements-5:checked + .form-checkbox__label::after,
+#achievements-6:checked + .form-checkbox__label::after {
+  display: block;
+}

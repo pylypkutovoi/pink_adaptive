@@ -6,7 +6,7 @@
 }
 
 
-@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+@media (max-width: $mobile-to-tablet-width) {
   .main-nav {
     position: relative;
     width: auto;
@@ -179,6 +179,7 @@
   .main-nav {
     width: 78.33%;
     margin: 0 auto;
+    max-width: 1200px;
     margin-bottom: -110px;
     display: flex;
     justify-content: space-between;
