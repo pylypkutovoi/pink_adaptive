@@ -1,0 +1,244 @@
+
+.upload__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.upload__form-wrapper {
+  background-color: #f2f2f2;
+}
+
+.upload__form {
+  height: auto;
+  padding: 20px 0 40px;
+}
+
+.upload__image {
+  display: block;
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.upload__tools-list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px 46px 10px 36px;
+}
+.upload__tools-item {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: $dark;
+  opacity: 0.3;
+  cursor: pointer;
+  outline: none;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    fill: $pink;
+    opacity: 1;
+  }
+  &--checked {
+    fill: $pink;
+    opacity: 1;
+  }
+}
+
+.upload__list {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  padding-bottom: 30px;
+
+  list-style: none;
+
+  border-bottom: 1px solid #dddfe0;
+}
+
+.upload__item {
+  width: 240px;
+  margin: 0 auto;
+  &:nth-child(2),
+  &:nth-child(3) {
+    display: none;
+  }
+}
+
+.upload__buttons-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.upload__button {
+  width: 100%;
+  display: block;
+  // box-sizing: bord
+  margin-bottom: 12px;
+  padding: 15px 35px 16px 35px;
+  font-size: 18px;
+  line-height: 18px;
+  color: $pink;
+  border: 3px solid $pink;
+  background-color: $white;
+  border-radius: 3em;
+  cursor: pointer;
+  outline: none;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $pink;
+  }
+  &:active {
+    color: #f1becc;
+  }
+}
+
+.upload__button--cancel {
+  border-color: #dddfe0;
+  color: #dddfe0;
+  &:hover,
+  &:focus {
+    border-color: #b5b9be;
+    color: #b5b9be;
+    background-color: $white;
+  }
+  &:active {
+    background-color: #b5b9be;
+    color: #cbced2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .upload__form {
+    width: 93.94%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 54px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .upload__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+
+  .upload__image {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .upload__tools {
+    width: 300px;
+  }
+
+  .upload__tools-list {
+    display: none;
+  }
+
+  .upload__list {
+    border: none;
+
+  }
+
+  .upload__item {
+    width: 202px;
+    margin-right: 0;
+    padding-bottom: 30px;
+    padding-left: 58px;
+    padding-right: 18px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #dddfe0;
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: block;
+      padding-top: 20px;
+    }
+    &--crop {
+      background-image: url("../img/icon-editor-crop.svg");
+      background-position: 2px 8px;
+      background-size: 24px 24px;
+    }
+    &--fill {
+      background-image: url("../img/icon-editor-fill.svg");
+      background-position: 2px 25px;
+      background-size: 24px 24px;
+    }
+    &--contrast {
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-position: 8px 29px;
+      background-size: 17px 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__form {
+    max-width: 900px;
+    padding-top: 55px;
+    padding-bottom: 57px;
+  }
+
+  .upload__tools {
+    width: 410px;
+  }
+
+  .upload__list {
+    padding-bottom: 0;
+    margin-bottom: 140px;
+  }
+  .upload__item {
+    width: 288px;
+    margin: 0;
+    padding-left: 92px;
+    padding-right: 30px;
+    &--crop {
+      background-image: url("../img/icon-editor-crop.svg");
+      background-position: 0 0;
+      background-size: 45px 45px;
+    }
+    &--fill {
+      background-image: url("../img/icon-editor-fill.svg");
+      background-position: 0 15px;
+      background-size: 48px 48px;
+    }
+    &--contrast {
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-position: 6px 18px;
+      background-size: 32px 32px;
+    }
+  }
+
+  .upload__buttons-wrapper {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .upload__button {
+    max-width: 184px;
+    height: 55px;
+    margin-bottom: 0;
+  }
+}
+
+
+
