@@ -2,7 +2,7 @@
   position: fixed;
   top: 40%;
   left: 50%;
-  z-index: 10;
+  z-index: 100;
   display: none;
 
   box-sizing: border-box;
@@ -45,8 +45,6 @@
 
 .modal-success__close {
   width: 100%;
-  // margin: 0 auto;
-  // padding: 16px 30px 17px;
 }
 
 @keyframes bounce-success {
@@ -98,8 +96,8 @@
 @media (min-width: $desktop-width) {
   .modal-success {
     width: 780px;
+    padding: 0;
     padding-top: 40px;
-    padding-bottom: 50px;
   }
   .modal-success__title {
     width: 400px;
@@ -110,7 +108,12 @@
   .modal-success__text {
     width: 380px;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
+  }
+
+  .modal-success__wrapper {
+    background-color: #f2f2f2;
+    padding: 48px 160px 52px;
   }
 
   .modal-success__close {

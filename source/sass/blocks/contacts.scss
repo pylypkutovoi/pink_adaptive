@@ -68,7 +68,7 @@
     left: 0;
     z-index: 5;
     height: 35px;
-    background-image: linear-gradient(to top right, transparent 49.5%, #f8f5f2 50.5%), linear-gradient(to top left, transparent 49.5%, #f8f5f2 50.5%);
+    background-image: linear-gradient(to top right, transparent 49.5%, $white 50.5%), linear-gradient(to top left, transparent 49.5%, $white 50.5%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%;
